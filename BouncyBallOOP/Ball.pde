@@ -20,6 +20,13 @@ class Ball {
     vel.mult(10);
     c = color(random(255), random(50), random(100, 255));
   }
+  Ball (float tX, float tY, int tDiam){
+    diam = tDiam;
+    loc = new PVector(tX,tY);
+    vel = PVector.random2D();
+    vel.mult(20);
+    c = color(random(255), random(50), random(100, 255));
+  }
  
 
   //after declaring fields and setting up constructors, you can define your methods
